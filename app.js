@@ -8,3 +8,5 @@ title.innerText = 'changedddd';
 
 console.log(title.id);
 console.log(title.className);
+
+const title2 = document.querySelector('.hello');
