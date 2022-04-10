@@ -1,12 +1,16 @@
-const title = document.getElementById('title');
-console.log(title);
-console.log(title);
-console.log(title);
-console.log(title);
+const title = document.querySelector('#title');
 
-title.innerText = 'changedddd';
+function handler() {
+	title.style.color = 'blue';
+}
 
-console.log(title.id);
-console.log(title.className);
+function mouse() {
+	title.innerText = 'mouse is here';
+}
 
-const title2 = document.querySelector('.hello');
+function mousegone() {
+	title.innerText = 'mouse is gone';
+}
+title.addEventListener('click', handler);
+title.addEventListener('mouseenter', mouse);
+title.addEventListener('mouseleave', mousegone);
